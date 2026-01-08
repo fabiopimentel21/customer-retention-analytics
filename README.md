@@ -1,97 +1,70 @@
-# 📊 Customer Retention Analytics
+# 📈 Strategic Growth & Pricing: Customer Retention Analytics
 
-Projeto de **análise de churn de clientes** com foco em **diagnóstico histórico**, **insights estratégicos** e **base para modelos de Machine Learning voltados à retenção**.
-
----
-
-## 🎯 Objetivo do Projeto
-
-Analisar o comportamento histórico de **churn de clientes** e **churn de faturamento**, identificar padrões críticos de perda e construir fundamentos analíticos para **antecipação do churn**, permitindo ações preventivas antes da saída do cliente.
-
-O projeto também avalia o impacto de **políticas de desconto** no **ticket médio**, reforçando a visão de que **desconto deve ser a última alternativa de retenção**, e não a principal estratégia.
+**Foco:** Estabilização de Fluxo de Caixa e Otimização de Margem via Retenção Preditiva.
 
 ---
 
-## 🧩 Fase 1 — Diagnóstico Histórico de Churn
+## 🎯 Visão Executiva
 
-### 📌 Escopo da Análise
-- Churn **Anual**
-- (Extensões previstas: Semestral, Trimestral e Mensal)
-- Base histórica de **2004 a 2025**
-- Análise por cliente único
-- Avaliação futura de **churn de faturamento**
+Este projeto aborda a instabilidade do **fluxo de caixa** causada pela volatilidade do churn. Através de uma abordagem de **Growth Analytics**, o objetivo é transformar a retenção em uma vantagem competitiva, mitigando perdas financeiras e estabelecendo uma **Política de Pricing** inteligente, onde o desconto deixa de ser uma reação desesperada e passa a ser uma ferramenta de preservação de margem.
 
 ---
 
-### 📈 Principais Descobertas
+## 🛠️ Pilares do Projeto (Framework de Growth)
 
-- Identificação de **períodos com churn crítico**, superiores a **20% ao ano**
-- Tendência de **crescimento do churn em 2025**, atingindo **22,14%**
-- Evidência de ciclos recorrentes de perda de clientes ao longo da série histórica
+### 1. Diagnóstico de Saúde da Base (Multi-Layer Churn)
+Análise profunda da série temporal para identificar a sazonalidade e a velocidade da perda de receita:
+* **Visão Temporal Multinível:** Decomposição do Churn em janelas **Anuais, Semestrais, Trimestrais e Mensais** para identificar gatilhos de saída em diferentes ciclos de vida.
+* **Segmentação por Produto:** Identificação de quais linhas de negócio estão "vazando" clientes e como isso impacta o giro de inventário.
+* **Churn Financeiro (Revenue Churn):** Mensuração do impacto direto na previsibilidade e na saúde do fluxo de caixa.
+
+### 2. Pricing & Eficiência Operacional
+Análise da elasticidade e do impacto das concessões financeiras no resultado final:
+* **Auditoria de Descontos:** Avaliação do impacto real das políticas de desconto no **Ticket Médio** (evitando a canibalização do lucro).
+* **Qualidade do Serviço:** Correlação entre a eficiência da prestação de serviço e a propensão à quebra de contrato.
+* **Estratégia de Pricing:** Criação de padrões técnicos para que o desconto seja aplicado de forma cirúrgica, preservando o **LTV (Lifetime Value)**.
+
+### 3. Inteligência Preditiva & Forecasting (Machine Learning)
+Desenvolvimento de um motor de previsão para antecipar a instabilidade antes que ela atinja o caixa:
+* **Churn Prediction Model:** Algoritmo de ML para identificar clientes com alto risco de evasão em estágio inicial.
+* **Relatório de Previsão de Perdas:** Estimativa quantitativa de quantos produtos e clientes podem deixar a base no próximo ciclo.
+* **Impacto Financeiro e Estoque:** Tradução da perda de clientes em indicadores de negócio, permitindo ajustes rápidos no planejamento de compras e alocação de recursos.
 
 ---
 
-### 💡 Insights Estratégicos
+## 🚀 Impacto no Negócio (Growth & Cash Flow)
 
-- A **vida média do cliente** está entre **4,5 e 5 anos**
-- A empresa precisa manter **esforço constante de vendas apenas para repor a base perdida**
-- Estratégias puramente reativas (ex: desconto) **pressionam o ticket médio e a margem**
-- Existe uma oportunidade clara de:
-  - Antecipar clientes com **alto risco de churn**
-  - Atuar com **estratégias personalizadas de retenção**
-  - Reduzir dependência de descontos agressivos
+* **Estabilização do Fluxo de Caixa:** Redução da volatilidade financeira através da antecipação de saídas.
+* **Proteção de Margem:** Implementação de regras de negócio para que a retenção não dependa apenas de descontos agressivos.
+* **Previsibilidade de Demanda:** Ajuste do estoque e da força de vendas baseado na previsão real de retenção e volume de produtos.
 
 ---
 
-## 🤖 Próximas Fases do Projeto
+## 📊 Estrutura Metodológica
 
-### 🔍 Fase 2 — Feature Engineering
-- Criação de variáveis comportamentais
-- Recência, frequência, tempo de contrato
-- Histórico de renegociação e descontos
-- Indicadores de engajamento e uso
-
-### 🧠 Fase 3 — Machine Learning
-- Modelos preditivos de churn
-- Classificação de risco (baixo, médio, alto)
-- Explicabilidade do modelo (SHAP / Feature Importance)
-
-### 🎯 Fase 4 — Ações de Retenção
-- Playbooks de retenção por perfil
-- Desconto como **última opção**
-- Estratégias alternativas:
-  - Upgrades
-  - Cross-sell
-  - Ajuste de plano
-  - Ações de relacionamento
+1.  **Análise de Séries Temporais:** Visualização da trajetória histórica e detecção de anomalias no churn.
+2.  **Análise de Produto & Financeiro:** Diagnóstico de onde a receita está sendo drenada.
+3.  **Modelagem Preditiva:** Treinamento de modelos focados em variáveis comportamentais e de pricing.
+4.  **Entrega Executiva:** Relatório de "Early Warning" (Aviso Prévio) para os times de CS, Vendas e Finanças.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- Python
-- Pandas
-- SQL (PostgreSQL)
-- SQLAlchemy
-- Jupyter Notebook
-- Git & GitHub
-
----
-
-## 📂 Estrutura do Repositório
-
+* **Linguagem:** Python
+* **Manipulação de Dados:** Pandas, NumPy
+* **Engenharia de Dados:** SQL (PostgreSQL), SQLAlchemy
+* **Machine Learning:** Scikit-Learn (Modelos de Classificação e Regressão)
+* **Ambiente:** Jupyter Notebook estruturado para leitura técnica e executiva
 
 ---
 
 ## 📌 Status do Projeto
 
-🟡 **Em desenvolvimento**  
-Fase atual: **Diagnóstico e consolidação analítica**
+🟡 **Em desenvolvimento** Fase atual: **Diagnóstico Estratégico e Consolidação do Dataset de ML**
 
 ---
 
 ## 👤 Autor
 
-**Fabio Pimentel**  
-Projeto focado em **Analytics, Retenção de Clientes e Machine Learning aplicado ao negócio**
-
+**Fabio Pimentel** *Especialista em Data Science focado em Growth, Estratégia de Negócio e Pricing.*
